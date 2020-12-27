@@ -1,7 +1,7 @@
 
 var ground;
 var wall_y = 4815;
-var gameState = "over";
+var gameState = "go";
 var y = 4990;
 var time = 0;
 var frame = 0;
@@ -913,8 +913,8 @@ function draw(){
         }
     }
 
-    //rand_left = Math.round(random(0,5));
-    //rand_right = Math.round(random(0,5));
+    rand_left = Math.round(random(0,5));
+    rand_right = Math.round(random(0,5));
 
     if(enemy1.isTouching(inv_wall_left) || enemy1.isTouching(inv_wall_right)){
         enemy1.velocityX *= -1;
