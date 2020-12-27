@@ -988,7 +988,7 @@ function draw(){
         skip_pwr3.velocityX *= -1;
     }
     
-    if(frameCount % 10 === 0){
+    if(frameCount % 1000 === 0){
 
         if(y > 20){
             y -= 70;
